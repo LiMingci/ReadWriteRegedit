@@ -148,18 +148,6 @@ bool CcReadWriteRegedit::setSZRegItem(
 
 std::string CcReadWriteRegedit::ws2s(const std::wstring& ws)
 {
-	//std::string curLocale = setlocale(LC_ALL, "");
-	//const wchar_t* _Source = ws.c_str();
-	//size_t _Dsize = wcstombs(NULL, _Source, 0) + 1;
-	//char *_Dest = new char[_Dsize];
-	//memset(_Dest, 0, _Dsize);
-	//wcstombs(_Dest, _Source, _Dsize);
-	//std::string result = _Dest;
-	//delete[]_Dest;
-	//setlocale(LC_ALL, curLocale.c_str());
-	//return result;
-
-
 	std::string str(ws.length(), ' ');
 	std::copy(ws.begin(), ws.end(), str.begin());
 	return str.data();
@@ -172,17 +160,6 @@ std::string CcReadWriteRegedit::ws2s(const std::wstring& ws)
 
 std::wstring CcReadWriteRegedit::s2ws(const std::string& s)
 {
-	//std::string curLocale = setlocale(LC_ALL, "");
-	//const char* _Source = s.c_str();
-	//size_t _Dsize = mbstowcs(NULL, _Source, 0) + 1;
-	//wchar_t *_Dest = new wchar_t[_Dsize];
-	//wmemset(_Dest, 0, _Dsize);
-	//mbstowcs(_Dest, _Source, _Dsize);
-	//std::wstring result = _Dest;
-	//delete[]_Dest;
-	//setlocale(LC_ALL, curLocale.c_str());
-	//return result;
-
 	std::wstring wstr(s.length(), L' ');
 	std::copy(s.begin(), s.end(), wstr.begin());
 	return wstr.data();
