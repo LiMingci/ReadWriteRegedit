@@ -3,6 +3,9 @@
 #include <Windows.h>
 #include <string>
 #include <vector>
+
+//读写注册表
+//支持类型REG_DWORD 、REF_SZ
 class CcReadWriteRegedit
 {
 
