@@ -2,8 +2,6 @@
 
 #include "CcReadWriteRegedit.h"
 
-
-
 CcReadWriteRegedit::CcReadWriteRegedit()
 {
 }
@@ -144,8 +142,6 @@ bool CcReadWriteRegedit::setSZRegItem(
 	return is_success;
 }
 
-
-
 std::string CcReadWriteRegedit::ws2s(const std::wstring& ws)
 {
 	std::string str(ws.length(), ' ');
@@ -153,10 +149,6 @@ std::string CcReadWriteRegedit::ws2s(const std::wstring& ws)
 	return str.data();
 
 }
-
-
-
-
 
 std::wstring CcReadWriteRegedit::s2ws(const std::string& s)
 {

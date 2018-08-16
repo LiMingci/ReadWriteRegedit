@@ -1,14 +1,10 @@
 #include "CcSoftWareEncipher.h"
-
-
-
 CcSoftWareEncipher::CcSoftWareEncipher(std::string name, unsigned long count)
 {
 	_softWareName = name;
 	_sumUseCount = count;
 	_useCount = 0;
 }
-
 
 CcSoftWareEncipher::~CcSoftWareEncipher()
 {
@@ -27,7 +23,6 @@ void CcSoftWareEncipher::endSoftWare()
 {
 	setSoftWareUseCount(_softWareName, _useCount + 1);
 }
-
 
 unsigned long CcSoftWareEncipher::getSoftWareUseCount(const std::string& name)
 {

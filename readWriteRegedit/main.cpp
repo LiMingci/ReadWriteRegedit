@@ -4,11 +4,8 @@
 
 #include "CCSoftWareEncipher.h"
 
-
-
 int main(int argc, char* argv[])
 {
-
 	CcSoftWareEncipher software_encipher("TestReg", 6);
 	software_encipher.beginSoftWare();
 

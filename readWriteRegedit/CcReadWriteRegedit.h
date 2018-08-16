@@ -8,7 +8,6 @@
 //支持类型REG_DWORD 、REF_SZ
 class CcReadWriteRegedit
 {
-
 public:
 	CcReadWriteRegedit();
 	~CcReadWriteRegedit();
